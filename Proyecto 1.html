@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comidas Rápidas Deliciosas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <style>
+            /* Estilos Generales */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Encabezado */
+        .header {
+            background: linear-gradient(135deg, #ff5722, #ff9800); /* Gradiente naranja */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('images/hero-bg.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff9800;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background-color: #e68900;
+        }
+
+        /* Secciones */
+        .section {
+            padding: 40px 0;
+        }
+
+        .menu-items, .promo-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .menu-item, .promo-item {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .menu-info {
+            padding: 20px;
+        }
+
+        .menu-info h3 {
+            margin-top: 0;
+        }
+
+        .promociones {
+            background-color: #ffebee; /* Rosa claro */
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .promociones .promo-item {
+            margin-bottom: 15px;
+        }
+
+        /* Contacto */
+        .contacto {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Pie de Página */
+        .footer {
+            background: #ff5722; /* Color naranja brillante */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+    </style>
+    <body>
+        <header class="header">
+            <div class="container">
+                <h1>Comidas Rápidas Deliciosas</h1>
+                <nav class="nav">
+                    <a href="#home">Inicio</a>
+                    <a href="#menu">Menú</a>
+                    <a href="#promociones">Promociones</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+            </div>
+        </header>
+
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>¡Bienvenidos a la Mejor Comida Rápida!</h2>
+                <p>Disfruta de nuestras hamburguesas, papas fritas y mucho más.</p>
+                <a href="#menu" class="cta-button">Ver Menú</a>
+            </div>
+        </section>
+
+        <section id="menu" class="section menu">
+            <div class="container">
+                <h2>Menú</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="images/burguer.jpg" alt="Hamburguesa Clásica">
+                        <div class="menu-info">
+                            <h3>Hamburguesa Clásica</h3>
+                            <p>Deliciosa hamburguesa con carne de res, queso, lechuga y tomate.</p>
+                            <span>$5.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/fries.jpg" alt="Papas Fritas">
+                        <div class="menu-info">
+                            <h3>Papas Fritas</h3>
+                            <p>Crocantes papas fritas, perfectas para acompañar cualquier comida.</p>
+                            <span>$2.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/soda.jpg" alt="Refresco">
+                        <div class="menu-info">
+                            <h3>Refresco</h3>
+                            <p>Refresco frío para complementar tu comida.</p>
+                            <span>$1.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="promociones" class="section promociones">
+            <div class="container">
+                <h2>Promociones</h2>
+                <div class="promo-items">
+                    <div class="promo-item">
+                        <h3>Combo Familiar</h3>
+                        <p>Incluye 2 hamburguesas, 2 papas fritas y 2 refrescos por solo $15.99.</p>
+                    </div>
+                    <div class="promo-item">
+                        <h3>Descuento de Mediodía</h3>
+                        <p>20% de descuento en todos los productos entre las 12 y las 3 PM.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p>Teléfono: <a href="tel:+123456789">+1 234 567 89</a></p>
+                <p>Correo electrónico: <a href="mailto:info@comidasrapidasdeliciosas.com">info@comidasrapidasdeliciosas.com</a></p>
+                <p>Dirección: Calle Ficticia 123, Ciudad, País</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Comidas Rápidas Deliciosas. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </body>
+    </html>
