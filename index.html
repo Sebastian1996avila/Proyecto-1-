@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comidas Rápidas Deliciosas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Estilos Generales */
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        background-image: url('images/fondo.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .header {
+        background: linear-gradient(115deg, #58f0d6, #570101);
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .nav a:hover {
+        text-decoration: underline;
+    }
+
+    .hero {
+        background: url('images/hero-bg.jpg') no-repeat center center/cover;
+        color: #080808;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero h2 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+    }
+
+    .cta-button {
+        display: inline-block;
+        padding: 15px 30px;
+        background: linear-gradient(160deg, #6b0c06, #0a0a0a);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .cta-button:hover {
+        background-color: #e68900;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+
+    .menu-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .menu-item {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .menu-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .menu-info {
+        padding: 20px;
+    }
+
+    .menu-info h3 {
+        margin-top: 0;
+    }
+
+    .add-to-cart-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #bcf8ee;
+        color: rgb(8, 8, 8);
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .add-to-cart-button:hover {
+        background-color: #680303;
+    }
+
+    .footer {
+       
+        background: linear-gradient(115deg, #58f0d6, #570101);
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .footer p {
+        margin: 0;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Comidas Rápidas Deliciosas</h1>
+            <nav class="nav">
+                <a href="#home">Inicio</a>
+                <a href="#menu">Menú</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>¡Bienvenidos a la Mejor Comida Rápida!</h2>
+            <p>Disfruta de nuestras hamburguesas, papas fritas y mucho más.</p>
+            <a href="#menu" class="cta-button">Ver Menú</a>
+        </div>
+    </section>
+
+    <section id="menu" class="section menu">
+        <div class="container">
+            <h2>Menú</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/burguer.jpg" alt="Hamburguesa Clásica">
+                    <div class="menu-info">
+                        <h3>Hamburguesa Clásica</h3>
+                        <p>Deliciosa hamburguesa con carne de res, queso, lechuga y tomate.</p>
+                        <span>$5.99</span>
+                        <a href="formulario.html?producto=Hamburguesa%20Clásica&precio=5.99" class="add-to-cart-button">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/fries.jpg" alt="Papas Fritas">
+                    <div class="menu-info">
+                        <h3>Papas Fritas</h3>
+                        <p>Crocantes papas fritas, perfectas para acompañar cualquier comida.</p>
+                        <span>$2.99</span>
+                        <a href="formulario.html?producto=Papas%20Fritas&precio=2.99" class="add-to-cart-button">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/soda.jpg" alt="Refresco">
+                    <div class="menu-info">
+                        <h3>Refresco</h3>
+                        <p>Refresco frío para complementar tu comida.</p>
+                        <span>$1.99</span>
+                        <a href="formulario.html?producto=Refresco&precio=1.99" class="add-to-cart-button">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/pizza.jpg" alt="Pizza Margarita">
+                    <div class="menu-info">
+                        <h3>Pizza Margarita</h3>
+                        <p>Pizza con salsa de tomate, queso mozzarella y albahaca fresca.</p>
+                        <span>$8.99</span>
+                        <a href="formulario.html?producto=Pizza%20Margarita&precio=8.99" class="add-to-cart-button">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/taco.jpg" alt="Tacos al Pastor">
+                    <div class="menu-info">
+                        <h3>Tacos al Pastor</h3>
+                        <p>Tortillas de maíz rellenas de carne al pastor, cebolla y cilantro.</p>
+                        <span>$6.49</span>
+                        <a href="formulario.html?producto=Tacos%20al%20Pastor&precio=6.49" class="add-to-cart-button">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/wings.jpg" alt="Alitas de Pollo">
+                    <div class="menu-info">
+                        <h3>Alitas de Pollo</h3>
+                        <p>Alitas crujientes con tu elección de salsa.</p>
+                        <span>$7.49</span>
+                        <a href="formulario.html?producto=Alitas%20de%20Pollo&precio=7.49" class="add-to-cart-button">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/sandwich.jpg" alt="Sándwich Club">
+                    <div class="menu-info">
+                        <h3>Sándwich Club</h3>
+                        <p>Sándwich de pavo, jamón, lechuga, tomate y mayonesa.</p>
+                        <span>$6.99</span>
+                        <a href="formulario.html?producto=S%C3%A1ndwich%20Club&precio=6.99" class="add-to-cart-button">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/salad.jpg" alt="Ensalada César">
+                    <div class="menu-info">
+                        <h3>Ensalada César</h3>
+                        <p>Lechuga romana, pollo a la parrilla, crutones y aderezo César.</p>
+                        <span>$5.49</span>
+                        <a href="formulario.html?producto=Ensalada%20C%C3%A9sar&precio=5.49" class="add-to-cart-button">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/burrito.jpg" alt="Burrito">
+                    <div class="menu-info">
+                        <h3>Burrito</h3>
+                        <p>Delicioso burrito relleno de carne, frijoles y arroz.</p>
+                        <span>$7.99</span>
+                        <a href="formulario.html?producto=Burrito&precio=7.99" class="add-to-cart-button">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/smoothie.jpg" alt="Smoothie de Frutas">
+                    <div class="menu-info">
+                        <h3>Smoothie de Frutas</h3>
+                        <p>Batido fresco de frutas variadas, perfecto para refrescarse.</p>
+                        <span>$4.99</span>
+                        <a href="formulario.html?producto=Smoothie%20de%20Frutas&precio=4.99" class="add-to-cart-button">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Teléfono: <a href="tel:+123456789">+1 234 567 89</a></p>
+            <p>Correo electrónico: <a href="mailto:info@comidasrapidasdeliciosas.com">info@comidasrapidasdeliciosas.com</a></p>
+            <p>Dirección: Calle Ficticia 123, Ciudad, País</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Comidas Rápidas Deliciosas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
